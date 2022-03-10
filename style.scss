@@ -501,7 +501,7 @@ img {
         max-width: 100%;
         height: auto;
 
-        background-image: url("/img/main-hero-img.png");
+        background-image: url("./img/main-hero-img.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -538,15 +538,15 @@ img {
                 &:nth-child(2)::before,
                 &:first-child::before {
                     top: -16px;
-                    background-image: url("/icons/icon-save-money.svg");
+                    background-image: url("./icons/icon-save-money.svg");
                     background-color: var(--text-accent-color-primary);
                 }
                 &:nth-child(2)::before {
-                    background-image: url("/icons/icon-percentage.svg");
+                    background-image: url("./icons/icon-percentage.svg");
                     background-color: var(--text-accent-color-secondary);
                 }
                 &:last-child::before {
-                    background-image: url("/icons/icon-shield.svg");
+                    background-image: url("./icons/icon-shield.svg");
                     background-color: var(--text-accent-color-third);
                 }
 
@@ -588,14 +588,14 @@ img {
 
                 &:nth-child(2)::after,
                 &:first-child::after {
-                    background-image: url("/img/icon-money-multy.png");
+                    background-image: url("./img/icon-money-multy.png");
                 }
                 &:nth-child(2)::after {
-                    background-image: url("/img/icon-persentages-multy.png");
+                    background-image: url("./img/icon-persentages-multy.png");
                 }
                 &:last-child::after {
                     top: -20px;
-                    background-image: url("/img/icon-shield-multy.png");
+                    background-image: url("./img/icon-shield-multy.png");
                 }
             }
         }
@@ -615,7 +615,7 @@ img {
 
     .banner-separator {
         position: relative;
-        background-image: url("/img/separator-banner.jpg");
+        background-image: url("./img/separator-banner.jpg");
         background-repeat: no-repeat;
         background-position: center left;
         background-size: contain;
@@ -633,7 +633,7 @@ img {
             width: 20%;
             height: 323px;
 
-            background-image: url("/img/separator-img.png");
+            background-image: url("./img/separator-img.png");
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
@@ -757,7 +757,7 @@ img {
         max-width: 100%;
         height: auto;
         background-color: var(--white-color);
-        background-image: url("/img/currenrcy-icon.png");
+        background-image: url("./img/currenrcy-icon.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -956,7 +956,7 @@ img {
 
     .banner-separator {
         height: 180px;
-        background-image: url("/img/separator-banner-2.jpg") !important;
+        background-image: url("./img/separator-banner-2.jpg") !important;
         background-size: cover !important;
 
         &::before {
@@ -1240,7 +1240,7 @@ img {
 
     // FIRST SCREEN
     .first-screen {
-        background-image: url("/img/main-hero-opacity.png") !important;
+        background-image: url("./img/main-hero-opacity.png") !important;
         .first-screen-header {
             p {
                 font-family: var(--body-font);
@@ -1273,7 +1273,7 @@ img {
 
         height: 300px;
 
-        background-image: url("/img/separator-banner-357.jpg") !important ;
+        background-image: url("./img/separator-banner-357.jpg") !important ;
         background-size: cover !important;
 
         &::before {
