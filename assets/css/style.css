@@ -1,10 +1,4 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
-@font-face {
-  font-family: "Madera W01";
-  src: url("/fonts/@font-face/b9a86a749f6403ffcbf023ac838674c6.eot");
-  src: url("/fonts/@font-face/b9a86a749f6403ffcbf023ac838674c6.eot?#iefix") format("embedded-opentype"), url("/fonts/@font-face/b9a86a749f6403ffcbf023ac838674c6.woff2") format("woff2"), url("/fonts/@font-face/b9a86a749f6403ffcbf023ac838674c6.woff") format("woff"), url("/fonts/@font-face/b9a86a749f6403ffcbf023ac838674c6.ttf") format("truetype"), url("/fonts/@font-face/b9a86a749f6403ffcbf023ac838674c6.svg#Madera W01") format("svg");
-}
-
 :root {
   --header-height: 1.25rem;
   --header-font: "Madera W01", sans-serif;
@@ -531,13 +525,6 @@ img {
   color: var(--white-color);
 }
 
-.page-body.dark-theme .arrow-up-wrapper,
-.page-body.dark-theme .menu-wrapper,
-.page-body.dark-theme .main-header {
-  -webkit-box-shadow: 4px 30px 54px -20px rgba(177, 65, 177, 0.2);
-          box-shadow: 4px 30px 54px -20px rgba(177, 65, 177, 0.2);
-}
-
 .page-body.dark-theme .icon-verified {
   fill: transparent;
   stroke: var(--white-color) !important;
@@ -560,14 +547,72 @@ img {
   background-color: var(--background-color-card);
 }
 
+.switch-themes {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 20px;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 10px;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.switch-themes .bi-moon-stars-fill {
+  display: block;
+  color: var(--main-color-alt);
+}
+
+.switch-themes .bi-moon-stars {
+  display: none;
+  color: #fff;
+}
+
 .main-header {
   padding: var(--header-height);
+}
+
+.main-header .switch-themes-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 30px;
+}
+
+.main-header .switch-themes-main .bi-moon-stars {
+  display: none;
 }
 
 .main-header .main-nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.main-header .main-nav .btn {
+  padding: 0;
 }
 
 .main-header .main-nav .main-nav-list {
@@ -1066,6 +1111,12 @@ img {
   .main-nav-list {
     display: none;
   }
+  .main-header .switch-themes-main {
+    display: none;
+  }
+  .main-header .main-nav .btn {
+    margin-right: 30px;
+  }
   .main-header .main-nav .main-nav-list {
     display: none;
   }
@@ -1186,9 +1237,12 @@ img {
     position: fixed;
     top: 0;
     background-color: var(--main-body-background-color);
-    -webkit-box-shadow: 4px 30px 54px -20px rgba(56, 49, 90, 0.2);
-            box-shadow: 4px 30px 54px -20px rgba(56, 49, 90, 0.2);
+    -webkit-box-shadow: 4px 30px 54px -20px rgba(56, 49, 90, 0.2) !important;
+            box-shadow: 4px 30px 54px -20px rgba(56, 49, 90, 0.2) !important;
     z-index: 1000;
+  }
+  .main-header .switch-themes-main {
+    display: none;
   }
   .main-header .logo img {
     width: 120px;
@@ -1352,8 +1406,14 @@ img {
     font-family: var(--body-font);
     font-weight: 500 !important;
   }
-  .how-it-work .how-it-work-wrapper .how-it-work-list .how-it-work-item:last-child:before, .how-it-work .how-it-work-wrapper .how-it-work-list .how-it-work-item:nth-child(2)::before, .how-it-work .how-it-work-wrapper .how-it-work-list .how-it-work-item::before {
-    content: "" !important;
+  .how-it-work .how-it-work-wrapper .how-it-work-list .how-it-work-item:last-child::before {
+    content: '3' !important;
+  }
+  .how-it-work .how-it-work-wrapper .how-it-work-list .how-it-work-item:nth-child(2)::before {
+    content: '2' !important;
+  }
+  .how-it-work .how-it-work-wrapper .how-it-work-list .how-it-work-item:first-child::before {
+    content: '1' !important;
   }
   .banner-separator {
     display: -webkit-box;
