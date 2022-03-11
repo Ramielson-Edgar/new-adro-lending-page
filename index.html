@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>AdroFx</title>
   </head>
-  <body>
+  <body class="page-body">
     <div class="menu">
       <div class="menu-wrapper">
         <ul class="menu-list">
@@ -47,6 +47,9 @@
 
         <div class="close-menu">
           <i class="bi bi-x"></i>
+
+          <i class="bi bi-moon-stars"></i>
+          <i class="bi bi-moon-stars-fill"></i>
         </div>
       </div>
     </div>
@@ -210,10 +213,12 @@
                   </svg>
                 </div>
 
-                <h3 class="item-heading">Verified Parthner</h3>
-                <p class="imte-desc">
-                  Partnered with a verified and innovative broker
-                </p>
+                <div class="item-body">
+                  <h3 class="item-heading">Verified Parthner</h3>
+                  <p class="imte-desc">
+                    Partnered with a verified and innovative broker
+                  </p>
+                </div>
               </li>
               <li class="why-choose-us-item">
                 <div class="icon">
@@ -221,10 +226,13 @@
                     <use href="./icons/sprite.svg#icon-idea"></use>
                   </svg>
                 </div>
-                <h3 class="item-heading">Best Solution</h3>
-                <p class="imte-desc">
-                  An all-in-one solution for your trading success
-                </p>
+
+                <div class="item-body">
+                  <h3 class="item-heading">Best Solution</h3>
+                  <p class="imte-desc">
+                    An all-in-one solution for your trading success
+                  </p>
+                </div>
               </li>
 
               <li class="why-choose-us-item">
@@ -233,8 +241,10 @@
                     <use href="./icons/sprite.svg#icon-platform"></use>
                   </svg>
                 </div>
-                <h3 class="item-heading">Platforms</h3>
-                <p class="imte-desc">Allpips tools & platforms</p>
+                <div class="imte-body">
+                  <h3 class="item-heading">Platforms</h3>
+                  <p class="imte-desc">Allpips tools & platforms</p>
+                </div>
               </li>
               <li class="why-choose-us-item">
                 <div class="icon">
@@ -242,8 +252,10 @@
                     <use href="./icons/sprite.svg#icon-support"></use>
                   </svg>
                 </div>
-                <h3 class="item-heading">Support</h3>
-                <p class="imte-desc">24/5 Support</p>
+                <div class="imte-body">
+                  <h3 class="item-heading">Support</h3>
+                  <p class="imte-desc">24/5 Support</p>
+                </div>
               </li>
             </ul>
 
@@ -457,6 +469,42 @@
             },
             250
           );
+        });
+
+        $(function theme() {
+          var darkMode;
+
+          if (localStorage.getItem("dark-mode")) {
+            darkMode = localStorage.getItem("dark-mode");
+          } else {
+            darkMode = "light-theme";
+          }
+
+          localStorage.setItem("dark-mode", darkMode);
+
+          if (localStorage.getItem("dark-mode") === "dark-theme") {
+            $(".page-body").addClass("dark-theme");
+            $(".bi-moon-stars").hide();
+
+            $(".bi-moon-stars-fill").show();
+          }
+
+          $(".bi-moon-stars-fill").click(function () {
+            $(".page-body").addClass("dark-theme");
+            $(".bi-moon-stars-fill").hide();
+            $(".bi-moon-stars").show();
+
+            localStorage.setItem("dark-mode", "dark-theme");
+          });
+
+          $(".bi-moon-stars").click(function () {
+            $(".page-body").removeClass("dark-theme");
+
+            $(".bi-moon-stars-fill").show();
+            $(".bi-moon-stars").hide();
+
+            localStorage.setItem("dark-mode", "light-theme");
+          });
         });
       });
     </script>

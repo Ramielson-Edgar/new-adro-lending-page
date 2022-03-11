@@ -4,9 +4,9 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url("../font/slick.eot");
-    src: url("../font/slick.eot?#iefix") format("embedded-opentype"), url("../font/slick.woff") format("woff"),
-        url("../font/slick.ttf") format("truetype"), url("../font/slick.svg#slick") format("svg");
+    src: url("/fonts/slick-font/slick.eot");
+    src: url("/fonts/slick-font/slick.eot?#iefix") format("embedded-opentype"), url("/fonts/slick-font/slick.woff") format("woff"),
+        url("/fonts/slick-font/slick.ttf") format("truetype"), url("/fonts/slick-font/slick.svg#lick") format("svg");
 }
 /* Arrows */
 .slick-prev,
