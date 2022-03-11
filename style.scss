@@ -1,5 +1,13 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
-
+@font-face {
+  font-family: "Madera W01";
+  src: local(''),
+    url("/fonts/Madera-W01-Bold.woff2")
+      format("woff2"),
+    url("/fonts/Madera-W01-Bold.woff")
+      format("woff")
+  
+}
 :root {
   --header-height: 1.25rem;
 
