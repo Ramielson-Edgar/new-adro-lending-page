@@ -7,7 +7,6 @@
     <!--FAVICON-->
     <link rel="shortcut icon" href="/icons/main-logo.svg" type="image/x-icon" />
     <!--FONTS-->
-
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
       rel="stylesheet"
@@ -68,16 +67,16 @@
         <div class="split">
           <ul class="split main-nav-list">
             <li class="main-nav-item">
-              <a href="#" class="nav-link">Top investors</a>
+              <a href="#Top-investors" class="nav-link">Top investors</a>
             </li>
             <li class="main-nav-item">
-              <a href="#" class="nav-link">Why to choose</a>
+              <a href="#Why-to-choose" class="nav-link">Why to choose</a>
             </li>
             <li class="main-nav-item">
-              <a href="#" class="nav-link">how it works</a>
+              <a href="#how-it-works" class="nav-link">how it works</a>
             </li>
-            <li class="main-nav-item">
-              <a href="#" class="nav-link">To get started</a>
+            <li class="main-nav-item mr-30">
+              <a href="#To-get-started" class="nav-link">To get started</a>
             </li>
           </ul>
 
@@ -87,7 +86,6 @@
 
           <div role="option" class="switch-themes-main">
             <i class="bi bi-moon-stars"></i>
-
             <i class="bi bi-moon-stars-fill"></i>
           </div>
           <div class="menu">
@@ -105,6 +103,9 @@
           <h1 class="text-bold-color mb-30 text-bold-color-center">
             The power of social investing
           </h1>
+          <div role="img" class="hero-img-wrapper">
+            <img class="img-fluid" src="./img/main-hero-opacity.png" alt="" />
+          </div>
           <p class="first-screen-desc mb-30 wrapper-600 text-bold-color-center">
             Discover and copy thousands of experienced traders. Allpips is the
             global social investment community that allows people to grow their
@@ -125,16 +126,19 @@
         </header>
 
         <div class="features-wrapper mb-50">
-          <ul class="features-list split container">
+          <ul class="features-list container">
             <li class="features-item">
               <p>
-                <strong class="accent-text-orange">Save </strong>on trading fees
+                <strong class="accent-text-orange">Save</strong>
+
+                on trading fees
               </p>
             </li>
             <li class="features-item">
               <p>
-                <strong class="accent-text-green">Completely</strong> free
-                account
+                <strong class="accent-text-green">Completely</strong>
+
+                free account
               </p>
             </li>
             <li class="features-item">
@@ -476,38 +480,38 @@
           );
         });
 
+        // $(function toggleTheme() {
+        //   $(".bi-moon-stars-fill").click(function () {
+        //     $(this).toggleClass("bi-moon-stars");
+        //     $(this).toggleClass("bi-moon-stars-fill");
+
+        //     if (this.toggleClass("bi-moon-stars")) {
+        //     }
+        //   });
+        // });
+
         $(function theme() {
           var darkMode;
-
           if (localStorage.getItem("dark-mode")) {
             darkMode = localStorage.getItem("dark-mode");
           } else {
             darkMode = "light-theme";
           }
-
-          localStorage.setItem("dark-mode", darkMode);
-
           if (localStorage.getItem("dark-mode") === "dark-theme") {
             $(".page-body").addClass("dark-theme");
-
             $(".bi-moon-stars").show();
             $(".bi-moon-stars-fill").hide();
           }
-
           $(".bi-moon-stars-fill").click(function () {
             $(".page-body").addClass("dark-theme");
             $(".bi-moon-stars-fill").hide();
             $(".bi-moon-stars").show();
-
             localStorage.setItem("dark-mode", "dark-theme");
           });
-
           $(".bi-moon-stars").click(function () {
             $(".page-body").removeClass("dark-theme");
-
             $(".bi-moon-stars-fill").show();
             $(".bi-moon-stars").hide();
-
             localStorage.setItem("dark-mode", "light-theme");
           });
         });

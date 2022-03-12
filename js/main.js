@@ -1,6 +1,6 @@
 $slick_slider = $(".slider");
 settings_slider = {
-  Infinity: false,
+  infinite: false,
   arrows: false,
   dots: true,
   speed: 1000,
@@ -13,6 +13,7 @@ settings_slider = {
     {
       breakpoint: 575,
       settings: {
+        infinite: false,
         arrows: false,
         centerMode: true,
         centerPadding: "10px",
