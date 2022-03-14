@@ -988,8 +988,21 @@ img {
       grid-template-areas: "item-icon item-icon" "item-body item-body";
   -webkit-column-gap: 20px;
           column-gap: 20px;
+  row-gap: 20px;
   -ms-grid-columns: 120px 1fr;
       grid-template-columns: 120px 1fr;
+  -ms-grid-rows: 170px;
+      grid-template-rows: 170px;
+}
+
+.main-content .get-started .get-started-wrapper .get-started-list .get-started-item:first-child .item-body {
+  margin-top: 20px;
+}
+
+.main-content .get-started .get-started-wrapper .get-started-list .get-started-item:nth-child(2) .item-icon {
+  position: relative;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
 }
 
 .main-content .get-started .get-started-wrapper .get-started-list .get-started-item .item-icon {
@@ -1381,6 +1394,11 @@ img {
             column-gap: 20px;
     -ms-grid-columns: 120px 1fr !important;
         grid-template-columns: 120px 1fr !important;
+    -ms-grid-rows: 100px !important;
+        grid-template-rows: 100px !important;
+  }
+  .get-started .get-started-wrapper .get-started-list .get-started-item:first-child .item-body {
+    margin-top: 0 !important;
   }
   .get-started .get-started-wrapper .get-started-list .get-started-item p {
     text-align: left !important;
@@ -1412,12 +1430,6 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: item-body;

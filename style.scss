@@ -948,8 +948,17 @@ img {
             "item-icon item-icon"
             "item-body item-body";
           column-gap: 20px;
+          row-gap: 20px;
 
           grid-template-columns: 120px 1fr;
+          grid-template-rows: 170px;
+
+          &:first-child .item-body {
+            margin-top: 20px;
+          }
+             &:nth-child(2) .item-icon {
+             position: relative;
+          transform: translateY(-30px) ;}
 
           .item-icon {
             display: flex;
@@ -1246,7 +1255,7 @@ img {
     }
   }
 
-    .main-page-footer {
+  .main-page-footer {
     .contacts-brand {
       grid-template-columns: 1fr;
       row-gap: 30px;
@@ -1346,7 +1355,10 @@ img {
           column-gap: 20px;
 
           grid-template-columns: 120px 1fr !important;
+          grid-template-rows: 100px !important;
 
+          &:first-child .item-body { margin-top: 0 !important ;}
+        
           p {
             text-align: left !important;
           }
@@ -1365,8 +1377,7 @@ img {
           .item-body {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
+            
 
             grid-area: item-body;
           }
@@ -1433,12 +1444,11 @@ img {
     .how-it-work-wrapper {
       .how-it-work-list {
         .how-it-work-item {
-          
           &::before {
             top: 20%;
             left: -15px !important;
 
-             font-size: 200px !important;
+            font-size: 200px !important;
           }
         }
       }
@@ -1476,8 +1486,6 @@ img {
       }
     }
   }
-
- 
 }
 
 @media (max-width: 375px) {
