@@ -670,6 +670,15 @@ img {
   }
 
   .features {
+
+      .features-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 50px;
+   
+      }
     .features-wrapper {
       margin-top: 0 !important;
       padding: 40px 0;
