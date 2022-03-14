@@ -521,7 +521,7 @@ img {
   --btn-ghost-bg-color-hover: #b494ff;
   --btn-ghost-bg-color-active: #6f32fe;
   --btn-ghost-box-shadow: 0px 26px 50px -2px rgba(180, 148, 255, 0.4);
-  --why-choose-us-card-shadow: #4px 72px 74px -20px rgba(56, 49, 90, 0.3);
+  --why-choose-us-card-shadow: 4px 72px 74px -20px rgba(56, 49, 90, 0.3);
   --white-color: #fff;
   --main-body-background-color: #38315a;
   --download-background-layout: #38315a;
@@ -545,6 +545,11 @@ img {
 .page-body.dark-theme .icon-verified {
   fill: transparent;
   stroke: var(--white-color) !important;
+}
+
+.page-body.dark-theme .main-header {
+  -webkit-box-shadow: 0px 20px 70px -20px rgba(251, 115, 233, 0.1) !important;
+          box-shadow: 0px 20px 70px -20px rgba(251, 115, 233, 0.1) !important;
 }
 
 .page-body.dark-theme .icon-idea,
@@ -1024,7 +1029,8 @@ img {
 .main-content .get-started .get-started-wrapper .get-started-list .get-started-item {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "item-icon item-icon" "item-body item-body";
+      grid-template-areas: "item-icon item-icon"
+ "item-body item-body";
   -webkit-column-gap: 20px;
           column-gap: 20px;
   row-gap: 20px;
@@ -1444,6 +1450,7 @@ img {
   }
   .get-started .get-started-wrapper .get-started-list .get-started-item {
     display: -ms-grid;
+    display: -ms-flexbox;
     display: grid;
         grid-template-areas: "item-icon item-body" !important;
     -webkit-column-gap: 20px;
@@ -1493,12 +1500,16 @@ img {
   .why-choose-us-section .bg-white {
     padding: 20px !important;
   }
-  .why-choose-us-section .why-choose-us-list {
+  .why-choose-us-section .why-choose-us-wrapper .why-choose-us-list {
     row-gap: 10px;
     margin-bottom: 20px !important;
   }
-  .why-choose-us-section .why-choose-us-list .why-choose-us-item {
+  .why-choose-us-section .why-choose-us-wrapper .why-choose-us-list .why-choose-us-item {
     padding: 20px !important;
+  }
+  .why-choose-us-section .why-choose-us-wrapper .btn a {
+    -webkit-box-shadow: 0px 20px 20px -10px rgba(111, 50, 254, 0.2);
+            box-shadow: 0px 20px 20px -10px rgba(111, 50, 254, 0.2);
   }
   .top-investor .text {
     -webkit-box-ordinal-group: 2 !important;
@@ -1552,6 +1563,10 @@ img {
   }
   .first-screen .first-screen-header .hero-img-wrapper {
     display: block !important;
+  }
+  .first-screen .first-screen-header .btn a {
+    -webkit-box-shadow: 0px 20px 20px -10px rgba(111, 50, 254, 0.2);
+            box-shadow: 0px 20px 20px -10px rgba(111, 50, 254, 0.2);
   }
   .how-it-work .how-it-work-wrapper .how-it-work-list {
     -ms-grid-columns: 1fr !important;

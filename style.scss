@@ -534,7 +534,7 @@ img {
   --btn-ghost-bg-color-active: #6f32fe;
   --btn-ghost-box-shadow: 0px 26px 50px -2px rgba(180, 148, 255, 0.4);
 
-  --why-choose-us-card-shadow: #4px 72px 74px -20px rgba(56, 49, 90, 0.3);
+  --why-choose-us-card-shadow: 4px 72px 74px -20px rgba(56, 49, 90, 0.3);
 
   --white-color: #fff;
   --main-body-background-color: #38315a;
@@ -561,18 +561,24 @@ img {
     stroke: var(--white-color) !important;
   }
 
+     .main-header {
+    box-shadow:  0px 20px 70px -20px rgba(251, 115, 233, 0.1) !important;
+  }
+
   .icon-idea,
   .icon-support,
   .icon-platform {
     fill: var(--white-color);
   }
 
+ 
   .menu-wrapper,
   .how-it-work,
   .bg-white,
   .features-wrapper {
     background-color: #4f438a !important;
   }
+
 }
 
 .light-theme {
@@ -648,7 +654,9 @@ img {
 }
 
 .main-content {
-  .separator {display: none;}
+  .separator {
+    display: none;
+  }
 
   .first-screen {
     max-width: 100%;
@@ -1321,12 +1329,14 @@ img {
   }
 
   // HEADER
-  .main-header hr {margin-top: 600px !important;}
+  .main-header hr {
+    margin-top: 600px !important;
+  }
   .main-header {
     position: fixed;
     top: 0;
     background-color: var(--main-body-background-color);
-    box-shadow: 4px 30px 54px -20px rgba(56, 49, 90, 0.2)!important;
+    box-shadow: 4px 30px 54px -20px rgba(56, 49, 90, 0.2) !important;
 
     .switch-themes-main {
       display: none;
@@ -1441,12 +1451,16 @@ img {
       padding: 20px !important;
     }
 
-    .why-choose-us-list {
-      row-gap: 10px;
-      margin-bottom: 20px !important;
-      .why-choose-us-item {
-        padding: 20px !important;
+    .why-choose-us-wrapper {
+      .why-choose-us-list {
+        row-gap: 10px;
+        margin-bottom: 20px !important;
+        .why-choose-us-item {
+          padding: 20px !important;
+        }
       }
+
+      .btn a {box-shadow:0px 20px 20px -10px rgba(111, 50, 254, 0.2) ;}
     }
   }
 
@@ -1500,6 +1514,8 @@ img {
       .hero-img-wrapper {
         display: block !important ;
       }
+
+      .btn a { box-shadow: 0px 20px 20px -10px rgba(111, 50, 254, 0.2);}
     }
   }
 
@@ -1558,11 +1574,12 @@ img {
     margin-bottom: 140px !important;
   }
 
-
   .main-header {
-    .logo {width: 90px;}
+    .logo {
+      width: 90px;
+    }
     .split {
-       align-items: center;
+      align-items: center;
 
       .btn {
         padding: 6px;
@@ -1611,7 +1628,6 @@ img {
       }
     }
   }
- 
 
   .features-list {
     padding-left: 100px !important;
