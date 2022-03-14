@@ -1247,6 +1247,9 @@ img {
   .main-content {
     padding-top: 50px;
   }
+  .main-content .first-screen .first-screen-header h1 {
+    margin-bottom: 0 !important;
+  }
   .main-header {
     position: fixed;
     top: 0;

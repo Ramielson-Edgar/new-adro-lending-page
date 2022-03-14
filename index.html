@@ -18,10 +18,6 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <!--SLICK SLIDER-->
-    <link rel="stylesheet" href="slick/slick.css" />
-    <link rel="stylesheet" href="slick/slick-theme.css" />
-
     <!--STYLE-->
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>AdroFx</title>
@@ -281,8 +277,8 @@
         </header>
 
         <div class="how-it-work-wrapper">
-          <div class="how-it-work-list slider container">
-            <div class="slide how-it-work-item">
+          <ul class="how-it-work-list container">
+            <li class="how-it-work-item">
               <h3 class="text-accent-blue mb-30">Choose A Trader</h3>
               <img
                 class="img-fluid"
@@ -295,8 +291,8 @@
                 Uncover top-performing traders by browsing profiles, stats, win
                 ratios, and more.
               </p>
-            </div>
-            <div class="slide how-it-work-item">
+            </li>
+            <li class="slide how-it-work-item">
               <h3 class="text-accent-blue mb-30">Set Your Account</h3>
               <img
                 class="img-fluid"
@@ -309,8 +305,8 @@
                 Select a trader with a required balance that fixes your balance
                 and profit share that's good for you.
               </p>
-            </div>
-            <div class="slide how-it-work-item">
+            </li>
+            <li class="slide how-it-work-item">
               <h3 class="text-accent-blue mb-30">Click &#34;Follow&#34;</h3>
               <img
                 class="img-fluid"
@@ -323,8 +319,8 @@
                 Tap on the trading expert you want to follow. Now when they
                 place a trade, so do you!
               </p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -444,7 +440,6 @@
     ></script>
 
     <script src="js/jquery.min.js"></script>
-    <script src="slick/slick.min.js"></script>
     <script src="js/main.js"></script>
     <script>
       // SHOW MENU
@@ -479,16 +474,6 @@
             250
           );
         });
-
-        // $(function toggleTheme() {
-        //   $(".bi-moon-stars-fill").click(function () {
-        //     $(this).toggleClass("bi-moon-stars");
-        //     $(this).toggleClass("bi-moon-stars-fill");
-
-        //     if (this.toggleClass("bi-moon-stars")) {
-        //     }
-        //   });
-        // });
 
         $(function theme() {
           var darkMode;

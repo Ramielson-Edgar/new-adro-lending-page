@@ -1210,8 +1210,13 @@ img {
 @media (max-width: 575.98px) {
   .main-content {
     padding-top: 50px;
-  }
+    .first-screen {
 
+  .first-screen-header h1 {margin-bottom: 0 !important;}
+    }
+     
+  }
+ 
   // HEADER
   .main-header {
     position: fixed;
