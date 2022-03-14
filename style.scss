@@ -111,7 +111,7 @@ a {
 // MARGIN
 
 .mb-80 {
-  margin-bottom: 80;
+  margin-bottom: 80px;
 }
 .mb-50 {
   margin-bottom: 50px;
@@ -123,7 +123,7 @@ a {
   margin-bottom: 30px;
 }
 .mb-20 {
-  margin-bottom: 20;
+  margin-bottom: 20px;
 }
 .mb-10 {
   margin-bottom: 10px;
@@ -458,9 +458,11 @@ img {
   z-index: 100000000;
   box-shadow: 12px 39px 50px -5px rgba(111, 50, 254, 0.4);
 
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
 
-  &:hover {background-color: var(--btn-ghost-bg-color-hover);}
+  &:hover {
+    background-color: var(--btn-ghost-bg-color-hover);
+  }
 }
 
 // MENU HOVER
@@ -655,7 +657,9 @@ img {
       justify-content: center;
       align-items: center;
 
-       .hero-img-wrapper {display: none;}
+      .hero-img-wrapper {
+        display: none;
+      }
       .first-screen-desc {
         font-family: var(--body-font);
         font-weight: var(--font-weight-light);
@@ -673,7 +677,6 @@ img {
     .features-list {
       display: flex;
       justify-content: space-around;
-   
 
       column-gap: 80px;
 
@@ -684,7 +687,6 @@ img {
           max-width: 247px;
         }
 
-  
         &:first-child::before {
           top: -16px;
           background-image: url("../../icons/icon-save-money.svg");
@@ -719,7 +721,6 @@ img {
           background-repeat: no-repeat;
           background-position: center;
         }
-
       }
     }
 
@@ -1010,8 +1011,34 @@ img {
     }
   }
 
+  .contacts-brand {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    column-gap: 190px;
+    margin-top: 50px;
+
+    font-size: 20px;
+    font-family: var(--body-font);
+
+    .brand-heading {
+      margin-bottom: 20px;
+    }
+
+    .brand-inner {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      row-gap: 10px;
+
+      font-family: var(--body-font);
+
+      justify-content: flex-start;
+    }
+  }
+
   .contacts-wrapper {
     position: relative;
+    font-size: 20px;
 
     .icon-email-link {
       display: block;
@@ -1141,6 +1168,13 @@ img {
       }
     }
   }
+
+  .main-page-footer {
+    .contacts-brand {
+      grid-template-columns: 210px 1fr;
+      column-gap: 190px;
+    }
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -1187,13 +1221,19 @@ img {
           flex-direction: column;
           justify-content: center;
 
-          &:last-child {    transform: translateY(-12px);}
-        
-          &:first-child:before {padding-bottom: 20px;}
-          &:nth-child(2):before {margin-bottom: 0;}
+          &:last-child {
+            transform: translateY(-12px);
+          }
+
+          &:first-child:before {
+            padding-bottom: 20px;
+          }
+          &:nth-child(2):before {
+            margin-bottom: 0;
+          }
           &::before {
             position: absolute;
-  
+
             left: -80px;
             margin-bottom: 0;
           }
@@ -1205,18 +1245,25 @@ img {
       }
     }
   }
+
+    .main-page-footer {
+    .contacts-brand {
+      grid-template-columns: 1fr;
+      row-gap: 30px;
+    }
+  }
 }
 
 @media (max-width: 575.98px) {
   .main-content {
     padding-top: 50px;
     .first-screen {
-
-  .first-screen-header h1 {margin-bottom: 0 !important;}
+      .first-screen-header h1 {
+        margin-bottom: 0 !important;
+      }
     }
-     
   }
- 
+
   // HEADER
   .main-header {
     position: fixed;
@@ -1370,8 +1417,10 @@ img {
     background-image: url("") !important;
     .first-screen-header {
       justify-content: space-around;
-      
-     .hero-img-wrapper {display: block !important;}
+
+      .hero-img-wrapper {
+        display: block !important;
+      }
       p {
         font-family: var(--body-font);
         font-weight: 500 !important;
@@ -1384,7 +1433,6 @@ img {
     .how-it-work-wrapper {
       .how-it-work-list {
         .how-it-work-item {
-        
           &::before {
             top: 20%;
             left: 10px;
@@ -1410,7 +1458,6 @@ img {
       top: 0 !important;
       width: 45% !important;
     }
- 
 
     .banner-separator-wrapper {
       flex-direction: column;
@@ -1426,6 +1473,8 @@ img {
       }
     }
   }
+
+ 
 }
 
 @media (max-width: 375px) {

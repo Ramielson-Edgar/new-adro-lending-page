@@ -91,7 +91,7 @@ a {
 }
 
 .mb-80 {
-  margin-bottom: 80;
+  margin-bottom: 80px;
 }
 
 .mb-50 {
@@ -107,7 +107,7 @@ a {
 }
 
 .mb-20 {
-  margin-bottom: 20;
+  margin-bottom: 20px;
 }
 
 .mb-10 {
@@ -459,8 +459,8 @@ img {
   z-index: 100000000;
   -webkit-box-shadow: 12px 39px 50px -5px rgba(111, 50, 254, 0.4);
           box-shadow: 12px 39px 50px -5px rgba(111, 50, 254, 0.4);
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .arrow-up:hover {
@@ -1076,8 +1076,42 @@ img {
   font-size: 1rem !important;
 }
 
+.main-page-footer .contacts-brand {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 220px 1fr;
+      grid-template-columns: 220px 1fr;
+  -webkit-column-gap: 190px;
+          column-gap: 190px;
+  margin-top: 50px;
+  font-size: 20px;
+  font-family: var(--body-font);
+}
+
+.main-page-footer .contacts-brand .brand-heading {
+  margin-bottom: 20px;
+}
+
+.main-page-footer .contacts-brand .brand-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 10px;
+  font-family: var(--body-font);
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 .main-page-footer .contacts-wrapper {
   position: relative;
+  font-size: 20px;
 }
 
 .main-page-footer .contacts-wrapper .icon-email-link {
@@ -1170,6 +1204,12 @@ img {
     -ms-grid-columns: (minmax(220px, 1fr))[auto-fit] !important;
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
   }
+  .main-page-footer .contacts-brand {
+    -ms-grid-columns: 210px 1fr;
+        grid-template-columns: 210px 1fr;
+    -webkit-column-gap: 190px;
+            column-gap: 190px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -1240,6 +1280,11 @@ img {
   }
   .features .features-wrapper .features-list .features-item p {
     font-size: 1rem;
+  }
+  .main-page-footer .contacts-brand {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    row-gap: 30px;
   }
 }
 
