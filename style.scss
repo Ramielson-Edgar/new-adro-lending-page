@@ -1433,9 +1433,12 @@ img {
     .how-it-work-wrapper {
       .how-it-work-list {
         .how-it-work-item {
+          
           &::before {
             top: 20%;
-            left: 10px;
+            left: -15px !important;
+
+             font-size: 200px !important;
           }
         }
       }
