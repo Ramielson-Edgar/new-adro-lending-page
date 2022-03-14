@@ -1,9 +1,9 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 @font-face {
   font-family: "Madera W01";
-  src: url("../fonts/b9a86a749f6403ffcbf023ac838674c6.eot");
+  src: url("../../fonts/b9a86a749f6403ffcbf023ac838674c6.eot");
   /* IE9*/
-  src: url("../fonts//b9a86a749f6403ffcbf023ac838674c6.eot?#iefix") format("embedded-opentype"), url("../fonts/b9a86a749f6403ffcbf023ac838674c6.woff2") format("woff2"), url("../fonts/b9a86a749f6403ffcbf023ac838674c6.woff") format("woff"), url("../fonts/b9a86a749f6403ffcbf023ac838674c6.ttf") format("truetype"), url("../fonts/b9a86a749f6403ffcbf023ac838674c6.svg#Madera W01 Bold") format("svg");
+  src: url("../../fonts//b9a86a749f6403ffcbf023ac838674c6.eot?#iefix") format("embedded-opentype"), url("../../fonts/b9a86a749f6403ffcbf023ac838674c6.woff2") format("woff2"), url("../../fonts/b9a86a749f6403ffcbf023ac838674c6.woff") format("woff"), url("../../fonts/b9a86a749f6403ffcbf023ac838674c6.ttf") format("truetype"), url("../../fonts/b9a86a749f6403ffcbf023ac838674c6.svg#Madera W01 Bold") format("svg");
   /* iOS 4.1- */
 }
 
