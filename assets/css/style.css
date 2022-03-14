@@ -357,6 +357,10 @@ img {
           transform: translateY(0);
 }
 
+.wrap-text {
+  display: none;
+}
+
 .menu-wrapper {
   position: fixed;
   width: 100%;
@@ -668,6 +672,10 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.main-content .first-screen .first-screen-header h1 {
+  margin-bottom: 30px;
 }
 
 .main-content .first-screen .first-screen-header .hero-img-wrapper {
@@ -1313,6 +1321,8 @@ img {
   }
   .features .features-wrapper .features-list .features-item p {
     margin-left: 0;
+    -webkit-margin-after: revert;
+            margin-block-end: revert;
   }
   .features .features-wrapper .features-list .features-item:last-child {
     -webkit-transform: translateY(-12px);
@@ -1341,12 +1351,9 @@ img {
 
 @media (max-width: 575.98px) {
   .main-content {
-    padding-top: 50px;
+    padding-top: 20px;
   }
-  .main-content .first-screen .first-screen-header h1 {
-    margin-bottom: 0 !important;
-  }
-  .main-header {
+  .main-content .main-header {
     position: fixed;
     top: 0;
     background-color: var(--main-body-background-color);
@@ -1354,23 +1361,23 @@ img {
             box-shadow: 4px 30px 54px -20px rgba(56, 49, 90, 0.2) !important;
     z-index: 1000;
   }
-  .main-header .switch-themes-main {
+  .main-content .main-header .switch-themes-main {
     display: none;
   }
-  .main-header .logo img {
+  .main-content .main-header .logo img {
     width: 120px;
   }
-  .main-header .ghost-btn {
+  .main-content .main-header .ghost-btn {
     padding: 10px;
     font-size: 14px;
   }
-  section {
+  .main-content section {
     padding: 20px 0;
   }
-  .main-page-footer {
+  .main-content .main-page-footer {
     padding: 50px 20px;
   }
-  .main-page-footer .main-nav {
+  .main-content .main-page-footer .main-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1384,15 +1391,15 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .main-page-footer .main-nav .logo {
+  .main-content .main-page-footer .main-nav .logo {
     display: block;
     margin-bottom: 30px;
   }
-  .main-page-footer .main-nav .logo img {
+  .main-content .main-page-footer .main-nav .logo img {
     width: 150px;
   }
-  .main-page-footer .main-nav .split,
-  .main-page-footer .main-nav .main-nav-list {
+  .main-content .main-page-footer .main-nav .split,
+  .main-content .main-page-footer .main-nav .main-nav-list {
     display: block;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1407,15 +1414,15 @@ img {
     margin-bottom: 30px;
     row-gap: 15px;
   }
-  .main-page-footer .main-nav .split .main-nav-item a,
-  .main-page-footer .main-nav .main-nav-list .main-nav-item a {
+  .main-content .main-page-footer .main-nav .split .main-nav-item a,
+  .main-content .main-page-footer .main-nav .main-nav-list .main-nav-item a {
     font-size: 1rem;
   }
-  .main-page-footer .main-nav .ghost-btn {
+  .main-content .main-page-footer .main-nav .ghost-btn {
     padding: 10px;
     font-size: 14px;
   }
-  .get-started .get-started-wrapper .get-started-list {
+  .main-content .get-started .get-started-wrapper .get-started-list {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(260px, 1fr))[auto-fit];
@@ -1424,7 +1431,7 @@ img {
             column-gap: 20px;
     row-gap: 30px;
   }
-  .get-started .get-started-wrapper .get-started-list .get-started-item {
+  .main-content .get-started .get-started-wrapper .get-started-list .get-started-item {
     display: -ms-grid;
     display: grid;
         grid-template-areas: "item-icon item-body" !important;
@@ -1435,13 +1442,13 @@ img {
     -ms-grid-rows: 100px !important;
         grid-template-rows: 100px !important;
   }
-  .get-started .get-started-wrapper .get-started-list .get-started-item:first-child .item-body {
+  .main-content .get-started .get-started-wrapper .get-started-list .get-started-item:first-child .item-body {
     margin-top: 0 !important;
   }
-  .get-started .get-started-wrapper .get-started-list .get-started-item p {
+  .main-content .get-started .get-started-wrapper .get-started-list .get-started-item p {
     text-align: left !important;
   }
-  .get-started .get-started-wrapper .get-started-list .get-started-item .item-icon {
+  .main-content .get-started .get-started-wrapper .get-started-list .get-started-item .item-icon {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1460,7 +1467,7 @@ img {
     -ms-grid-column: 1;
     grid-area: item-icon;
   }
-  .get-started .get-started-wrapper .get-started-list .get-started-item .item-body {
+  .main-content .get-started .get-started-wrapper .get-started-list .get-started-item .item-body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1472,27 +1479,27 @@ img {
     -ms-grid-column: 2;
     grid-area: item-body;
   }
-  .why-choose-us-section .bg-white {
+  .main-content .why-choose-us-section .bg-white {
     padding: 20px !important;
   }
-  .why-choose-us-section .why-choose-us-list {
+  .main-content .why-choose-us-section .why-choose-us-list {
     row-gap: 10px;
     margin-bottom: 20px !important;
   }
-  .why-choose-us-section .why-choose-us-list .why-choose-us-item {
+  .main-content .why-choose-us-section .why-choose-us-list .why-choose-us-item {
     padding: 20px !important;
   }
-  .top-investor .text {
+  .main-content .top-investor .text {
     -webkit-box-ordinal-group: 2 !important;
         -ms-flex-order: 1 !important;
             order: 1 !important;
   }
-  .top-investor .img {
+  .main-content .top-investor .img {
     -webkit-box-ordinal-group: 1 !important;
         -ms-flex-order: 0 !important;
             order: 0 !important;
   }
-  .top-investor .top-investor-section {
+  .main-content .top-investor .top-investor-section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1508,29 +1515,39 @@ img {
             align-items: center;
     text-align: center;
   }
-  .top-investor .top-investor-section .top-investor-heading {
+  .main-content .top-investor .top-investor-section .top-investor-heading {
     padding-top: 20px !important;
   }
-  .first-screen {
+  .main-content .first-screen {
     background-image: url("") !important;
   }
-  .first-screen .first-screen-header {
+  .main-content .first-screen .first-screen-header {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  .first-screen .first-screen-header .hero-img-wrapper {
-    display: block !important;
+  .main-content .first-screen .first-screen-header .wrap-text {
+    display: block;
   }
-  .first-screen .first-screen-header p {
+  .main-content .first-screen .first-screen-header h1 {
+    max-width: 500px;
+    margin-bottom: 0;
+  }
+  .main-content .first-screen .first-screen-header .first-screen-desc {
+    margin-bottom: 20px;
+  }
+  .main-content .first-screen .first-screen-header .hero-img-wrapper {
+    display: block;
+  }
+  .main-content .first-screen .first-screen-header p {
     font-family: var(--body-font);
     font-weight: 500 !important;
   }
-  .how-it-work .how-it-work-wrapper .how-it-work-list .how-it-work-item::before {
+  .main-content .how-it-work .how-it-work-wrapper .how-it-work-list .how-it-work-item::before {
     top: 20%;
     left: -15px !important;
     font-size: 200px !important;
   }
-  .banner-separator {
+  .main-content .banner-separator {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1545,11 +1562,11 @@ img {
     background-image: url("../../img/separator-banner-357.jpg") !important;
     background-size: cover !important;
   }
-  .banner-separator::before {
+  .main-content .banner-separator::before {
     top: 0 !important;
     width: 45% !important;
   }
-  .banner-separator .banner-separator-wrapper {
+  .main-content .banner-separator .banner-separator-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1564,7 +1581,7 @@ img {
     padding-top: calc(25vw - 20px);
     row-gap: 20px;
   }
-  .banner-separator .banner-separator-wrapper .btn {
+  .main-content .banner-separator .banner-separator-wrapper .btn {
     padding: 0 !important;
   }
 }
