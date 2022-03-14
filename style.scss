@@ -806,6 +806,7 @@ img {
           grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
           column-gap: 5px;
           margin-top: 50px;
+            row-gap: 10px;
 
           .why-choose-us-item {
             display: flex;
@@ -895,7 +896,6 @@ img {
         position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
 
         p {
@@ -1145,7 +1145,7 @@ img {
       padding: 20px 30px 40px !important;
 
       .why-choose-us-list {
-        row-gap: 10px;
+       
         .why-choose-us-item {
           padding: 30px !important;
         }

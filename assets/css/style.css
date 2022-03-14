@@ -819,6 +819,7 @@ img {
   -webkit-column-gap: 5px;
           column-gap: 5px;
   margin-top: 50px;
+  row-gap: 10px;
 }
 
 .main-content .why-choose-us-section .bg-white .why-choose-us-wrapper .why-choose-us-list .why-choose-us-item {
@@ -933,9 +934,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1194,9 +1192,6 @@ img {
   }
   .why-choose-us-section .bg-white {
     padding: 20px 30px 40px !important;
-  }
-  .why-choose-us-section .bg-white .why-choose-us-list {
-    row-gap: 10px;
   }
   .why-choose-us-section .bg-white .why-choose-us-list .why-choose-us-item {
     padding: 30px !important;
