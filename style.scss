@@ -1180,13 +1180,13 @@ img {
         flex-direction: column;
         flex-basis: 470px;
         height: 350px;
-        background-color: var(--white-color);
         border-radius: 18px;
         margin-right: 20px;
         overflow: hidden;
 
         .client-feedback {
           padding: 30px;
+          background-color: var(--white-color);
           flex-grow: 1;
 
           .client-heading {
@@ -1203,12 +1203,16 @@ img {
         .client-stats {
           justify-content: space-between;
           background-color: var(--btn-primary-bg-color-active);
+          border-bottom-right-radius: 16px ;
+    
+
           padding: 30px 40px;
 
           .client-wrapper {
             position: relative;
             justify-content: center;
             align-items: center;
+        
 
             .img-wrapper {
               position: absolute;
@@ -1254,11 +1258,11 @@ img {
               height: 52px;
 
               font-size: 13px;
-              color: var(--rating-color);
+              color: #2BF1AB;
 
               border-radius: 100px;
 
-              border: 3px solid var(--rating-color);
+              border: 3px solid #2BF1AB;
               background: transparent;
             }
           }
